@@ -1,18 +1,17 @@
-import { Footer, Navbar } from '@components'
-import { Metadata } from 'next'
-import './globals.css'
-
-
+import { Footer, Navbar } from "@components";
+import { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Car Hub',
-  description: 'Discover the best cars in the world.',
-}
+  title: "Car Hub",
+  description: "Discover the best cars in the world.",
+  icons: "/logo.svg",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -22,5 +21,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
